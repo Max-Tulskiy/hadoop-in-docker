@@ -1,4 +1,4 @@
-FROM base-image
+FROM maxtulskiy/haboop-base-image:latest
 
 HEALTHCHECK CMD curl -f http://localhost:9864/ || exit 1
 
