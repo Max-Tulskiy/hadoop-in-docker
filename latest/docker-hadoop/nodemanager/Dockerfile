@@ -1,4 +1,4 @@
-FROM base-image
+FROM maxtulskiy/hadoop-base-image:latest
 
 HEALTHCHECK CMD curl -f http://localhost:8042/ || exit 1
 

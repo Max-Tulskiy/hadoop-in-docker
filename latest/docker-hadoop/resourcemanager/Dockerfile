@@ -1,4 +1,4 @@
-FROM maxtulskiy/haboop-base-image:latest
+FROM maxtulskiy/hadoop-base-image:latest
 
 HEALTHCHECK CMD curl -f http://localhost:8088/ || exit 1
 
