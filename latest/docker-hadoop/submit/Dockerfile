@@ -1,4 +1,4 @@
-FROM base-image
+FROM maxtulskiy/haboop-base-image:latest
 
 COPY WordCount.jar /opt/hadoop/applications/WordCount.jar
 
