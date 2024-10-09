@@ -1,7 +1,7 @@
 services:
   namenode:
     build: ./namenode
-    #image: maxtulskiy/haboop-base-image:latest
+    #image: maxtulskiy/hadoop-base-image:latest
     container_name: namenode
     restart: always
     ports:
@@ -16,7 +16,7 @@ services:
 
   datanode:
     build: ./datanode
-    #image: maxtulskiy/haboop-base-image:latest
+    #image: maxtulskiy/hadoop-base-image:latest
     container_name: datanode
     restart: always
     volumes:
@@ -28,7 +28,7 @@ services:
 
   datanode1:
     build: ./datanode
-    #image: maxtulskiy/haboop-base-image:latest
+    #image: maxtulskiy/hadoop-base-image:latest
     container_name: datanode1
     restart: always
     volumes:
@@ -40,7 +40,7 @@ services:
 
   datanode2:
     build: ./datanode
-    #image: maxtulskiy/haboop-base-image:latest
+    #image: maxtulskiy/hadoop-base-image:latest
     container_name: datanode2
     restart: always
     volumes:
@@ -52,7 +52,7 @@ services:
 
   historyserver:
     build: ./historyserver
-    #image: bde2020/hadoop-historyserver:2.0.0-hadoop3.2.1-java8
+    #image: maxtulskiy/hadoop-base-image:latest
     container_name: historyserver
     restart: always
     environment:
@@ -64,7 +64,7 @@ services:
 
   resourcemanager:
     build: ./resourcemanager
-    #image: bde2020/hadoop-resourcemanager:2.0.0-hadoop3.2.1-java8
+    #image: maxtulskiy/hadoop-base-image:latest
     container_name: resourcemanager
     restart: always
     environment:
